@@ -1,0 +1,92 @@
+/* diecast.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FF6A13; /* Hot Wheels Orange */
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header section styling */
+header {
+    background-color: #002F6C; /* Hot Wheels Blue */
+    text-align: center;
+    padding: 30px;
+}
+
+.hotwheels-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.collection-description {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Collection grid styling */
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for each car item */
+.car-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #FF6A13; /* Border to match the theme */
+}
+
+.car-item:hover {
+    transform: translateY(-10px);
+}
+
+.car-name {
+    font-size: 1.1em;
+    padding: 10px;
+    background-color: #FF6A13;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #002F6C;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
