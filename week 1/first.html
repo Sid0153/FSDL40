@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advanced Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>first program</p>
-    <h1>This is second line</h1>
+    <header>
+        <h1>Advanced Photo Gallery</h1>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2>Gallery</h2> <!-- Title for the gallery section -->
+            <div class="gallery">
+        
+            </div>
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <div class="lightbox-slides">
+                    <img class="lightbox-slide" src="https://raw.githubusercontent.com/Sid0153/FSDL40/refs/heads/main/week%201/skyline.jpg" alt="Image 1">
+                    <img class="lightbox-slide" src="https://raw.githubusercontent.com/Sid0153/FSDL40/refs/heads/main/week%201/fast-and-furious-1970-dodge-charger.jpg" alt="Image 2">
+                    <img class="lightbox-slide" src="https://raw.githubusercontent.com/Sid0153/FSDL40/refs/heads/main/week%201/brian-tftf-supra.webp" alt="Image 3">
+                    <img class="lightbox-slide" src="image4.jpg" alt="Image 4">
+                    <img class="lightbox-slide" src="image5.jpg" alt="Image 5">
+                    <img class="lightbox-slide" src="image6.jpg" alt="Image 6">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Advanced Photo Gallery</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

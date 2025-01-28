@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.ticket {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header .student-photo {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+header .header-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header .header-text p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+header h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+/* Student Details Section */
+.student-details {
+    margin-top: 20px;
+}
+
+.student-details h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.student-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.student-details li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Examination Details Section */
+.exam-details {
+    margin-top: 20px;
+}
+
+.exam-details h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Seat Assignment Section */
+.seat-assignment {
+    margin-top: 20px;
+}
+
+.seat-assignment h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.seat-assignment ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.seat-assignment li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* Hover Effects */
+table tr:hover {
+    cursor: pointer;
+    background-color: #d3ffd3;
+}
+
+footer p:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Pseudo-elements */
+header h1::after {
+    content: " - Hall Ticket";
+    font-size: 1.2em;
+}
+
+footer::after {
+    content: "© 2025 University of XYZ";
+    font-size: 1em;
+    color: #4CAF50;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ticket {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    .student-details h3, .exam-details h3, .seat-assignment h3 {
+        font-size: 1.2em;
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
