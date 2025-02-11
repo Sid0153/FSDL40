@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladder Game</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Snake and Ladder Game</h1>
+
+        <!-- Game Board -->
+        <div id="board" class="board">
+            <!-- The 100 squares will be dynamically added here by JavaScript -->
+        </div>
+
+        <!-- Roll Dice Button -->
+        <button id="rollButton" class="roll-button">Roll Dice</button>
+        <p id="diceRollResult" class="dice-roll-result">Roll the dice to start!</p>
+
+        <!-- Player Info -->
+        <div class="player-info">
+            <p>Player 1 Position: <span id="player1Pos">1</span></p>
+            <p>Player 2 Position: <span id="player2Pos">1</span></p>
+        </div>
+    </div>
+
+    <script src="ladder.js"></script>
+</body>
+</html>

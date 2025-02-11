@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Roulette Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Russian Roulette - 4 Players</h1>
+        
+        <div id="player-status" class="player-status">
+            <p>Player 1: <span id="player1Status">Alive</span></p>
+            <p>Player 2: <span id="player2Status">Alive</span></p>
+            <p>Player 3: <span id="player3Status">Alive</span></p>
+            <p>Player 4: <span id="player4Status">Alive</span></p>
+        </div>
+        
+        <button id="startGame" class="start-button">Start Game</button>
+        <button id="pullTrigger" class="pull-button" disabled>Pull the Trigger</button>
+        
+        <p id="turnInfo" class="turn-info">It's Player 1's Turn!</p>
+        <p id="gameResult" class="game-result"></p>
+    </div>
+
+    <script src="roulette.js"></script>
+</body>
+</html>

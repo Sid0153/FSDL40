@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Age Verification</h1>
+        <p>Please enter your birthdate to verify your age:</p>
+
+        <input type="date" id="dob" />
+        <button id="verifyBtn">Verify Age</button>
+
+        <p id="message" class="message hidden"></p>
+
+        <div id="content" class="hidden">
+            <h2>Access Granted!</h2>
+            <p>Welcome to the site. You are old enough to enter!</p>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="age.js".js"></script>
+</body>
+</html>
