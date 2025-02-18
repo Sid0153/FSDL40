@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Earth Weather App</h1>
+            <p id="location-name">Location: <span id="location">Fetching...</span></p>
+        </header>
+        <div id="weather-info">
+            <div id="map"></div>
+            <div id="weather-details">
+                <h2>Weather Details</h2>
+                <p id="temp">Temperature: </p>
+                <p id="humidity">Humidity: </p>
+                <p id="wind-speed">Wind Speed: </p>
+                <p id="weather-description">Description: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

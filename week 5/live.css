@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#app {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #d50000; /* Red theme like news channels */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header .subheading {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#news-ticker {
+    background-color: #ffeb3b; /* Yellow for breaking news */
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#main-news {
+    margin-top: 30px;
+}
+
+#headline-news h2 {
+    color: #d50000;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#headline-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#headline-list .news-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#news-categories h2 {
+    color: #d50000;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+#categories {
+    display: flex;
+    gap: 15px;
+}
+
+#categories .category {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#categories .category:hover {
+    background-color: #01579b;
+}
